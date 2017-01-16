@@ -13,8 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ORM\\": "src/",
-      "Bin\\": "bin/"
+      "ORM\\": "src/"
     }
   },
   "autoload-dev": {
@@ -26,5 +25,6 @@
     "code-style": "phpcs --standard=PSR2 src && phpcs --standard=PSR2 --ignore=Examples tests",
     "test": "phpunit",
     "coverage": "phpunit --coverage-text"
-  }
+  },
+  "bin": [ "bin/orm-console" ]
 }

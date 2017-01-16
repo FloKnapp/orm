@@ -33,6 +33,10 @@ class ArgumentParser
     {
         $args = array_splice($argv, 1, count($argv));
 
+        if (empty($args)) {
+            throw new \Exception('Not enough parameters given.');
+        }
+
         for ($i = 0; $i < count($args); $i++) {
 
             if (strpos($args[$i], '-') === false) {
