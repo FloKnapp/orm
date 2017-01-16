@@ -10,7 +10,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ORM\\": "src/"
+      "ORM\\": "src/",
+      "Bin\\": "bin/"
     }
   },
   "autoload-dev": {
